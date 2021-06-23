@@ -1,11 +1,11 @@
 import React from 'react'
 
-const SideBare = () => {
+const UsersPage = () => {
     return (
         <div>
-            Side Bare 
+            users Page !!
         </div>
     )
 }
 
-export default SideBare;
+export default UsersPage
