@@ -1,10 +1,29 @@
+import { Link } from "react-router-dom"
 import React from 'react'
+import LinkPage from "../../interfaces/link-page";
 
-const SideBareItem = () => {
+
+interface SideBareItemProps {
+    titleDomain:string;
+    linksPages:LinkPage[];
+}
+
+const SideBareItem = (props:SideBareItemProps) => {
     return (
-        <div>
-            side bare item 
-        </div>
+        <ul>
+            <li>{props.titleDomain}</li>
+            <ul>
+                {props.linksPages.map((l) => (
+                    <li>
+                        {l.icon} <Link to={l.path} >
+                            {l.label}
+                        </Link>
+                    </li>
+
+                ))}
+            </ul>
+
+        </ul>
     )
 }
 

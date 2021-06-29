@@ -1,11 +1,11 @@
 import React from 'react'
 
-const TopBare = () => {
+const Error404 = () => {
     return (
         <div>
-            top bare
+            Page NotFound !!
         </div>
     )
 }
 
-export default TopBare;
+export default Error404

@@ -1,10 +1,11 @@
 import React from 'react'
+import { MENU } from '../../constants/menu-cts';
+import SideBarItem from "./side-bare-item";
+
 
 const SideBare = () => {
     return (
-        <div>
-            Side Bare 
-        </div>
+        <SideBarItem titleDomain="Dashboard" linksPages={MENU} />
     )
 }
 
